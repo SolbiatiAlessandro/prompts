@@ -4,12 +4,13 @@ Given the following weekly notes, create a calendar like table where each cell i
 TASK DETAILS
 *informations* - Is really important that all the informations in the note fit in the table. If some informations don't have a time on them just add them somewhere at random in the week, if you are putting them at random make sure to prepend them with a (#) symbol. Is really important that they end in the final table.
 *summary* - The table should not be too verbose and you can summarise content if it's getting to long.
+*task operation* I am going to provide you weekly notes one by one and for each you should populate a new row of the table `<tr>` (see output table format below)
 
 The notes are formatted like this
 ```
 <STARTDATE>/<ENDDATE> - Status and Priorities
 ======
-<CONTENT>
+<CONTENT> (the content is in markdown)
 ```
 
 This is an example

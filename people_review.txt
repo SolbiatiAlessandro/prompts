@@ -1,0 +1,1 @@
+Can you know tell me given all these notes who are the people that appears in the notes, how frequently they appear, and a short summary of what I wrote about them. Present this in a tabular format
