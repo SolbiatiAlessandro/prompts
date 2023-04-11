@@ -1,0 +1,6 @@
+Can you know tell me given all these notes who are the people that appears in the notes, how frequently they appear, and a short summary of what I wrote about them. Present this in a tabular format
+
+Make a summary of the key insight from all the notes I shared. The insights should be shaped in the form of:
+1. Central themes occuring in my notes
+2. Learnings on most of the themes contained in the notes
+3. Your proposed solution on how to improve on each themes

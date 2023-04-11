@@ -1,0 +1,200 @@
+Help me write a weekly review facebook post for the work I have done.
+The facebook post should
+- be in markdown
+- have bullet points
+- have emojis
+- have a next steps section at the end
+- be succint
+- be optimised for engagement
+- have a thanks section at the end
+
+
+This an example weekly review, use the same format, but don't reuse any of these informations.
+```
+# Alex Status and Priorities - 4 April 2023
+## 🛍️ Sustainability Ads (see more in [Sustainability Ads HPM](https://fb.workplace.com/groups/3345174142428869/posts/3432391660373783))
+- 🔥 **P1 Ranking** wrapped up calibration analysis and started coverage analysis [using ads best practices](https://www.internalfb.com/intern/wiki/Data_mining/feature_understanding/#dense-features-summary) and re-trained first ads model for baseline!
+- **P2 Strategy** we have a [clear roadmap to experiment offline NE gains (i.e. revenue)](https://docs.google.com/document/d/1gwkXzrehpFdWYdk_z806z0ogmwNmmM11avHT3VXeynA/edit#bookmark=id.h134bethcdpl) + feedback from SI leads is great! going to follow up on Kaushik Iyer questions during office hours! w/ Vidya Sarma
+- **P3 Eng coordination** Tabitha left 😿! Offboarded all her knowledge, helping Manav Goel with diff reviews and Tudi Iveelt with privacy approval for F3
+## 🧰 Others
+- **P1 Better Engineering** merging Giving ML and Climate better engineering efforts ([workplace post](https://fb.workplace.com/groups/364035407370511/posts/1654195705021135))
+- **P2 Ads Greenwashing** we got dates for Paris in mid-may Elisa Borry-Estrade
+- **P3 MATS** working with Mohini Patel on spreadsheet with current bot information on building a GenAI prototype + supporting Ling Lin with queries for business case
+cc Vincent Gonguet Kevin Conroy Cindy Chiao Spencer Ahrens Laney Zamore Jordan Bain Hongfei Li Prerna Totla Sanjay Pawar Jenny Fant Eric Tyler Ryan Beiermeister +
+---
+_bonus_: sneaked in to a closed-door conference in Washington DC organised by [https://en.wikipedia.org/wiki/Tyler_Cowen](https://en.wikipedia.org/wiki/Tyler_Cowen) speaking about Climate and Generative AI! **Will spend the week working from NYC office** excited to hang out with Catherine Dong Tudi Iveelt Emily Wood Laney Zamore Siddharth Sharma Jackie Xu + if you are in NYC hmu!
+```
+
+
+These are the raw notes from this week you should use to make the post. Use as many informations from this as you can!
+```
+3 April/10 Apr - Alex Status and Priorities 
+
+Status and Priorities 3 April 2023
+
+🛍️ Sustainability Ads (see more in Sustainability Ads HPM)
+
+P1 Strategy 
+Thu 10:41
+Collaboration doc to get ads support thttps://docs.google.com/document/d/1tA4snH824YhqQuV5XdY8tSn1_JXh38arCRoIvXrXw0g/edit# 
+Meeting at 16:00
+Making a doc and catherine doing reachouts
+🔥P1 Signal Analysis
+Mon16:00 
+Feature coverage
+https://www.internalfb.com/intern/wiki/Data_mining/feature_understanding/#dense-features-summary
+Tabita https://fb.workplace.com/groups/3345174142428869/posts/3430757677203848 
+Model trained 
+Launch flow
+Tue 14:22
+Reviewed manav code with gpt4
+Tue 17:10 played with jackie 1 hour
+Wed
+15:00 workflow is expired
+Asking manav
+15:00 spoke with vidya on we need more ads support
+Didn’t really work on this, beside trying to figure out on the uber how to call from manifold
+Thu
+09:00 starting - wanna work on this tunil 
+09:09 https://www.internalfb.com/intern/qa/52408/hey--im-from-fblearner-team 
+09:17 Asked jackie friend, he suggest to use the ondemand  
+09:23 running on cli
+09:53 found the actual error, is too old https://fb.workplace.com/groups/436960810311379/posts/490973274910132 
+FlowException(
+    message=('[INPUT_ERROR][ONCALL_NAME_UNSPECIFIED]  UserError: Package '
+     'ads_ranking_feature_stats_calc:25 was rejected because it is too old: '
+     'Package ads_ranking_feature_stats_calc:25 has an upstream epoch of '
+     '2019-10-28 12:00:52 which is more than the allowed 60 days old'),
+    debug_info=FlowExceptionDebugInfo(
+        log_correlator_id='0572065bacd34b8890d09213844363a7',
+        server_addr='tsp_prn/fblearner/flow-server/22'),
+    errorTraits={'category': 'input_error', 'retryability': 'False'})
+10:11
+Identified real problem (too hold)
+Made post https://fb.workplace.com/groups/614256178623001/posts/24523862200569064 
+Moving on 
+16:50
+Passed this to manav
+P1 Ads Ranking Experiments (working doc)  
+CVR baseline?
+Find the model where is miscalibrated 
+Thu 10:25
+Making notebook with baseline
+Let’s try to copy paste python from flow and run it in notebook
+Thu 11:04
+Trying to run dpa with features getting error https://www.internalfb.com/intern/anp/view/?id=3394686
+Thu 11:05
+CVR baseline 
+11:16 launching https://chat.openai.com/chat/e06e971f-7e59-4e28-b22d-29b7414f3783 
+Thu 11:24
+CVR baseline notebook going https://www.internalfb.com/intern/anp/view/?dapr_project=asset%3A%2F%2Fdata.analysis%2Fclimate_team_data_investigations&id=3394800 
+Thu 16:49
+Back at this
+What I want to figure out is “is the model going to pick up the features”
+Thu 16:56
+Work backward from offline gains
+Thu 18:40
+Came back from happy hour
+Looking at example of offline gains 
+Look at proposals 
+Thu 22:00
+NE in segment gains, the guy answered!
+Fri 11:11
+Starting
+Fri 13:49
+Didn’t start (spoke with Jenny and did standup meeting)
+Starting now
+Need to figure out what we need to show NE gains
+Fri 14:10
+Productive
+Reading vertical platform code stuff
+Adding stuff to doc
+Should make a wiki?
+Fri 14:30
+Q: how do you define vertical?
+Fri 14:35
+Mmm this are catalog verticals 
+Fri 17:05
+Fire!! https://docs.google.com/document/d/1L9P9RjrIdRwHhQWlqJ7Fy9w7UJm9IHjhugKnRvWtwbc/edit# 
+Follow up
+Add ads vertical ASAP
+Read about gated arch
+
+P2 features 
+Other
+
+Manav mondey:
+Coverage 
+Number of ads created daily 
+
+Labeling party
+Exciting!
+Perception of greenwashing as opposed to real greenwashing
+Sentiment of users comments
+
+
+🧰 Others
+
+
+P1 Newsfeed Ranking H1’23 Climate ranking plans  
+Tue 15:30
+Meeting while writing statauts update
+We are blocked, this is suspicious , ask jackie
+P1 wrote status update
+Tue 16:00
+P3 GenAI
+15:44
+Preparing session
+17:00
+Finished session
+Wow people are not excited!
+What an interesting signal
+Fri 14:10
+Found internal chatgpt
+Should make a “make workplace post” prompt
+Wrote to achim 
+P2 Classifiers
+P3 Paris 
+P3 Ads Direction
+P3 Climate Discovery Engine
+P3 MATS
+Tue 13:50
+Meeting, strategy doc for 2023 
+https://docs.google.com/document/d/1IdRA6KoJYcnGB_9uBfCHeFUGDc2A4ZfKd-BZw0afRls/edit 
+Look into to chatgpt bot
+Make a langchain chatbot agent
+Giving the spreadsheet
+P3 Regen chatbots
+P3 BE : share with climate
+Mon
+Made workplace post 
+YES Feature store analysis on climate 
+Automated testing
+Model infra?
+Alerts
+P2 people
+Tue ? 15:40
+Wrote feedback to maanav
+P1 PSC
+Thu 10:18
+Gotta speak with catherine and ask her about 1) mentoring 2) ads POC 3) PSC 
+Th 13:30
+Cath 1:1
+
+
+
+New York 
+Tue 12:30
+CSI question about GenAI
+Estheban 
+Same approach for ads 
+Responsible AI 
+Incorporate principles across product dev lifecycle
+Reached out to responsible AI
+NYC office is amazing! Everyone is so hot 
+Reciprocal ties 
+```
+
+
+
+

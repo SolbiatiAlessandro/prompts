@@ -1,0 +1,91 @@
+TASK SUMMARY
+Given the following weekly notes, create a calendar like table where each cell is a day of the month of March 2023 with what happened every day of the month according to the note. 
+
+TASK DETAILED INSTRUCTIONS
+1. *informations* - Is really important that all the informations in the note fit in the table. If some informations don't have a time on them just add them somewhere at random in the week, if you are putting them at random make sure to prepend them with a (#) symbol. Is really important that they end in the final table.
+2. *summary* - The table should not be too verbose and you can summarise content if it's getting to long.
+3. *repetition* - Make sure there are no repeated items in different table cells!
+4. *task sequencing* I am going to provide you weekly notes one by one and for each you should populate a new row of the table `<tr>` (see output table format below)
+
+The notes are formatted like this
+```
+<STARTDATE>/<ENDDATE> - Status and Priorities
+======
+<CONTENT> (the content is in markdown)
+```
+
+This is an example
+
+input:
+```
+27March/3Apr - Status and Priorities
+=====
+Wed: activity A and B
+Thu: activity C
+Fri: activity D
+```
+
+Given 27 March 2023 was a Monday, the table's cell "Wed 29 March" should have "activity one" and all details.
+
+This is the format of the output table 
+
+```
+<table border="1" cellpadding="5" style="border-collapse: collapse;">
+  <tr style="background-color: black; color: white;">
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+  </tr>
+  <tr >
+    <td><strong>27 Feb</strong></td>
+    <td><strong>28 Feb</strong></td>
+    <td><strong>1 Mar</strong></td>
+    <td><strong>2 Mar</strong></td>
+    <td><strong>3 Mar</strong></td>
+    <td><strong>4 Mar</strong></td>
+    <td><strong>5 Mar</strong></td>
+  </tr>
+  <tr >
+    <td><strong>6 Mar</strong></td>
+    <td><strong>7 Mar</strong></td>
+    <td><strong>8 Mar</strong></td>
+    <td><strong>9 Mar</strong></td>
+    <td><strong>10 Mar</strong></td>
+    <td><strong>11 Mar</strong></td>
+    <td><strong>12 Mar</strong></td>
+  </tr>
+  <tr >
+    <td><strong>13 Mar</strong></td>
+    <td><strong>14 Mar</strong></td>
+    <td><strong>15 Mar</strong></td>
+    <td><strong>16 Mar</strong></td>
+    <td><strong>17 Mar</strong></td>
+    <td><strong>18 Mar</strong></td>
+    <td><strong>19 Mar</strong></td>
+  </tr>
+  <tr >
+    <td><strong>20 Mar</strong></td>
+    <td><strong>21 Mar</strong></td>
+    <td><strong>22 Mar</strong></td>
+    <td><strong>23 Mar</strong></td>
+    <td><strong>24 Mar</strong></td>
+    <td><strong>25 Mar</strong></td>
+    <td><strong>26 Mar</strong></td>
+  </tr>
+  <tr >
+    <td><strong>27 Mar</strong></td>
+    <td><strong>28 Mar</strong></td>
+    <td><strong>29 Mar</strong><br>* Activity A <br>* Activity B</td>
+    <td><strong>30 Mar</strong><br>* Activity C</td>
+    <td><strong>31 Mar</strong><br>* Activity D</td>
+    <td><strong>1 Apr</strong></td>
+    <td><strong>2 Apr</strong></td>
+  </tr>
+</table>
+```
+
+I am going to now give you one by one the weekly notes.

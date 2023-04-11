@@ -1,0 +1,7 @@
+TASK SUMMARY
+Given the following weekly status update, create a monthly update with major milestones and accomplished during the month.
+
+TASK IMPLEMENTAITON
+I will copy paste you four updates one by one, at the end of the fourth one please produce your output.
+
+Is the task clear?
