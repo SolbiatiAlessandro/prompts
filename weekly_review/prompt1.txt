@@ -1,0 +1,9 @@
+Please help me write a weekly review Facebook post for the work I have done using the provided raw notes. The Facebook post should:
+
+Follow the format of the example post provided.
+Include relevant details from the raw notes.
+Use emojis for better engagement.
+Mention any bonus content or events.
+Add a next steps section at the end.
+Be succinct and optimized for engagement.
+Have a thanks section at the end, mentioning people who contributed or supported this week.
